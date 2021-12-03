@@ -1,6 +1,6 @@
 # Vue 3 + Typescript + Vite 中后台工程模板
 
-> 默认使用 Vue3 `<script setup>` SFCs 模式开发。[script setup 文档](https://v3.cn.vuejs.org/api/sfc-script-setup.html)
+> 默认使用 Vue3 `<script setup>` [script setup](https://v3.cn.vuejs.org/api/sfc-script-setup.html) SFCs 模式开发。
 
 - [vite](https://cn.vitejs.dev/)
 - [vue3](https://v3.cn.vuejs.org/)
@@ -20,7 +20,7 @@
 
 ## 代码规范
 
-使用《阿里巴巴前端规约》保障项目的编码规范和代码质量。 `eslint + prettier + stylelint + markdownlint + commitlint`。[f2elint 文档](https://www.npmjs.com/package/f2elint)
+使用《阿里巴巴前端规约》[f2elint](https://www.npmjs.com/package/f2elint) 保障项目的编码规范和代码质量， `eslint` + `prettier` + `stylelint` + `markdownlint` + `commitlint`。
 
 ## 安装使用
 
@@ -32,13 +32,20 @@ git clone git@github.com:wcongke/vue3-ts-vite-admin-template.git
 
 # 安装依赖
 cd vue3-ts-vite-admin-template
-
-# 运行
 pnpm install
 
-# 运行
+# 运行(开发环境)
 pnpm run dev
+# 运行(测试环境)
+pnpm run test
+# 运行(生产环境)
+pnpm run prod
 
-# 打包
-pnpm run build
+# 打包(开发环境)
+pnpm run build:dev
+# 打包(测试环境)
+pnpm run build:test
+# 打包(生产环境)
+pnpm run build:prod
+
 ```

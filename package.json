@@ -2,9 +2,12 @@
   "name": "vue3-ts-vite-template",
   "version": "0.0.1",
   "scripts": {
-    "dev": "vite",
-    "build": "vue-tsc --noEmit && vite build",
-    "serve": "vite preview",
+    "dev": "cross-env NODE_ENV=development vite --mode development --host",
+    "test": "cross-env NODE_ENV=test vite --mode test --host",
+    "prod": "cross-env NODE_ENV=production vite --mode production --host",
+    "build:dev": "vue-tsc --noEmit && cross-env NODE_ENV=development vite build --mode development",
+    "build:test": "vue-tsc --noEmit && cross-env NODE_ENV=test vite build --mode test",
+    "build:prod": "vue-tsc --noEmit && cross-env NODE_ENV=production vite build --mode production",
     "f2elint-scan": "f2elint scan",
     "f2elint-fix": "f2elint fix"
   },
@@ -12,10 +15,13 @@
     "vue": "^3.2.16"
   },
   "devDependencies": {
+    "@types/node": "^16.11.11",
     "@typescript-eslint/eslint-plugin": "^5.5.0",
     "@typescript-eslint/parser": "^5.5.0",
     "@vitejs/plugin-vue": "^1.9.3",
+    "@vitejs/plugin-vue-jsx": "^1.3.0",
     "autoprefixer": "^10.4.0",
+    "cross-env": "^7.0.3",
     "eslint": "^8.3.0",
     "eslint-config-ali": "^12.2.2",
     "eslint-config-prettier": "^8.3.0",
@@ -27,6 +33,8 @@
     "tailwindcss": "^2.2.19",
     "typescript": "^4.4.3",
     "vite": "^2.6.4",
+    "vite-plugin-html": "^2.1.1",
+    "vite-plugin-vue-setup-extend": "^0.1.0",
     "vue-tsc": "^0.3.0"
   },
   "husky": {
