@@ -1,7 +1,16 @@
+import { resolve } from 'path';
 import type { UserConfig, ConfigEnv } from 'vite';
 import { loadEnv } from 'vite';
 import { createVitePlugins } from './build/vite/plugins';
 import { wrapperEnv } from './build/utils';
+
+function pathResolve(dir: string) {
+  return resolve(__dirname, '.', dir);
+}
+
+const alias: Record<string, string> = {
+  '/@': pathResolve('src'),
+};
 
 export default ({ command, mode }: ConfigEnv): UserConfig => {
   const root = process.cwd();
@@ -17,6 +26,7 @@ export default ({ command, mode }: ConfigEnv): UserConfig => {
   return {
     base: VITE_PUBLIC_PATH,
     root,
+    resolve: { alias },
     plugins: createVitePlugins(viteEnv, isBuild),
     build: {
       sourcemap: false,
