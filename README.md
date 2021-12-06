@@ -12,6 +12,7 @@
 
 ## 核心插件
 
+- [vueuse](https://vueuse.org/)
 - [pinia](https://pinia.esm.dev/)
 - [vue-router4](https://next.router.vuejs.org/zh/index.html)
 - [tailwindcss](https://www.tailwindcss.cn/)
