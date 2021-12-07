@@ -11,7 +11,7 @@ const homeRouter: RouteRecordRaw = {
     icon: 'home',
     title: '首页',
   },
-  component: () => import('/@/views/home/index/index.vue'),
+  component: () => import('/@/views/home/default-home.vue'),
 };
 
 export default homeRouter;

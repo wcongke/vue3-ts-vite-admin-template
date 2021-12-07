@@ -14,7 +14,7 @@ export const frameOut: RouteRecordRaw[] = [
   {
     path: '/login',
     name: 'login',
-    component: () => import('/@/views/login/index/index.vue'),
+    component: () => import('/@/views/login/default-login.vue'),
     meta: {
       title: '登录',
     },
@@ -28,7 +28,7 @@ export const errorPage: RouteRecordRaw[] = [
   {
     path: '/:pathMatch(.*)*',
     name: 'NotFound',
-    component: () => import('/@/views/not-found/index.vue'),
+    component: () => import('../views/not-found/default-404.vue'),
   },
 ];
 

@@ -11,11 +11,6 @@ module.exports = {
     defineProps: 'readonly',
   },
   rules: {
-    'vue/multi-word-component-names': [
-      'error',
-      {
-        ignores: ['index'],
-      },
-    ],
+    'vue/max-attributes-per-line': 'off',
   },
 };

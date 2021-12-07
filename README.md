@@ -23,6 +23,12 @@
 
 使用《阿里巴巴前端规约》[f2elint](https://www.npmjs.com/package/f2elint) 保障项目的编码规范和代码质量， `eslint` + `prettier` + `stylelint` + `markdownlint` + `commitlint`。
 
+## element-plus
+
+### icon
+
+> 在 `src/plugin/element-plus/icon` 中注册需要使用的 element plus icon。
+
 ## 安装使用
 
 - 获取项目代码
