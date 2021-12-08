@@ -8,5 +8,5 @@
   },
   "editor.formatOnSave": true,
   "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "cSpell.words": ["elint", "markdownlint", "pinia", "pnpm", "vueuse"]
+  "cSpell.words": ["elint", "markdownlint", "pinia", "pnpm", "unplugin", "vueuse"]
 }

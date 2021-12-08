@@ -9,7 +9,8 @@
     "build:test": "vue-tsc --noEmit && cross-env NODE_ENV=test vite build --mode test",
     "build:prod": "vue-tsc --noEmit && cross-env NODE_ENV=production vite build --mode production",
     "f2elint-scan": "f2elint scan",
-    "f2elint-fix": "f2elint fix"
+    "f2elint-fix": "f2elint fix",
+    "prepare": "husky install"
   },
   "dependencies": {
     "element-plus": "^1.2.0-beta.5",
@@ -35,6 +36,8 @@
     "eslint-plugin-prettier": "^4.0.0",
     "eslint-plugin-vue": "^8.1.1",
     "husky": "^7.0.4",
+    "markdownlint": "^0.24.0",
+    "markdownlint-config-ali": "^0.1.1",
     "nprogress": "^0.2.0",
     "postcss": "^8.4.4",
     "prettier": "^2.5.0",
@@ -55,7 +58,7 @@
   "husky": {
     "hooks": {
       "pre-commit": "f2elint commit-file-scan",
-      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+      "commit-msg": "f2elint commit-msg-scan"
     }
   }
 }
