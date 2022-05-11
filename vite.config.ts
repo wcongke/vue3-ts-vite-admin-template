@@ -33,7 +33,7 @@ export default ({ command, mode }: ConfigEnv): UserConfig => {
       brotliSize: false,
       // 打包大小不超过1000kb警告
       chunkSizeWarningLimit: 1000,
-      minify: false,
+      minify: 'esbuild',
       terserOptions: {
         compress: {
           keep_infinity: true,

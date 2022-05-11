@@ -5,6 +5,7 @@
     "dev": "cross-env NODE_ENV=development vite --mode development --host --open",
     "test": "cross-env NODE_ENV=test vite --mode test --host --open",
     "prod": "cross-env NODE_ENV=production vite --mode production --host --open",
+    "preview": "vite preview",
     "build:dev": "vue-tsc --noEmit && cross-env NODE_ENV=development vite build --mode development",
     "build:test": "vue-tsc --noEmit && cross-env NODE_ENV=test vite build --mode test",
     "build:prod": "vue-tsc --noEmit && cross-env NODE_ENV=production vite build --mode production",
@@ -13,7 +14,7 @@
     "prepare": "husky install"
   },
   "dependencies": {
-    "element-plus": "^1.2.0-beta.5",
+    "element-plus": "^2.2.0",
     "vue": "^3.2.16",
     "vue-router": "^4.0.12"
   },
@@ -51,6 +52,8 @@
     "typescript": "^4.4.3",
     "unplugin-element-plus": "^0.1.3",
     "vite": "^2.6.4",
+    "vite-plugin-chunk-split": "^0.2.2",
+    "vite-plugin-compression": "^0.5.1",
     "vite-plugin-html": "^2.1.1",
     "vite-plugin-vue-setup-extend": "^0.1.0",
     "vue-tsc": "^0.3.0"
