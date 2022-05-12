@@ -23,6 +23,7 @@ specifiers:
   markdownlint: ^0.24.0
   markdownlint-config-ali: ^0.1.1
   nprogress: ^0.2.0
+  pinia: ^2.0.14
   postcss: ^8.4.4
   prettier: ^2.5.0
   sass: ^1.44.0
@@ -33,6 +34,7 @@ specifiers:
   stylelint-scss: ^4.0.0
   tailwindcss: ^2.2.19
   typescript: ^4.4.3
+  ua-parser-js: ^1.0.2
   unplugin-element-plus: ^0.1.3
   vite: ^2.6.4
   vite-plugin-chunk-split: ^0.2.2
@@ -45,6 +47,7 @@ specifiers:
 
 dependencies:
   element-plus: 2.2.0_vue@3.2.23
+  pinia: 2.0.14_usuvfdrz3jrq3dgij4cw2dcmo4
   vue: 3.2.23
   vue-router: 4.0.12_vue@3.2.23
 
@@ -80,6 +83,7 @@ devDependencies:
   stylelint-scss: 4.0.0_stylelint@14.1.0
   tailwindcss: 2.2.19_nnhd2fel3s3rlvpyehwqvhbgrm
   typescript: 4.5.2
+  ua-parser-js: 1.0.2
   unplugin-element-plus: 0.1.3_vite@2.6.14+vue@3.2.23
   vite: 2.6.14_sass@1.44.0
   vite-plugin-chunk-split: 0.2.2_vite@2.6.14
@@ -915,6 +919,10 @@ packages:
 
   /@vue/devtools-api/6.0.0-beta.20.1:
     resolution: {integrity: sha512-R2rfiRY+kZugzWh9ZyITaovx+jpU4vgivAEAiz80kvh3yviiTU3CBuGuyWpSwGz9/C7TkSWVM/FtQRGlZ16n8Q==}
+    dev: false
+
+  /@vue/devtools-api/6.1.4:
+    resolution: {integrity: sha512-IiA0SvDrJEgXvVxjNkHPFfDx6SXw0b/TUkqMcDZWNg9fnCAHbTpoo59YfJ9QLFkwa3raau5vSlRVzMSLDnfdtQ==}
     dev: false
 
   /@vue/reactivity/3.2.23:
@@ -3577,6 +3585,24 @@ packages:
     engines: {node: '>=8.6'}
     dev: true
 
+  /pinia/2.0.14_usuvfdrz3jrq3dgij4cw2dcmo4:
+    resolution: {integrity: sha512-0nPuZR4TetT/WcLN+feMSjWJku3SQU7dBbXC6uw+R6FLQJCsg+/0pzXyD82T1FmAYe0lsx+jnEDQ1BLgkRKlxA==}
+    peerDependencies:
+      '@vue/composition-api': ^1.4.0
+      typescript: '>=4.4.4'
+      vue: ^2.6.14 || ^3.2.0
+    peerDependenciesMeta:
+      '@vue/composition-api':
+        optional: true
+      typescript:
+        optional: true
+    dependencies:
+      '@vue/devtools-api': 6.1.4
+      typescript: 4.5.2
+      vue: 3.2.23
+      vue-demi: 0.12.1_vue@3.2.23
+    dev: false
+
   /pkg-dir/2.0.0:
     resolution: {integrity: sha1-9tXREJ4Z1j7fQo4L1X4Sd3YVM0s=}
     engines: {node: '>=4'}
@@ -4489,6 +4515,10 @@ packages:
     resolution: {integrity: sha512-5BlMof9H1yGt0P8/WF+wPNw6GfctgGjXp5hkblpyT+8rkASSmkUKMXrxR0Xg8ThVCi/JnHQiKXeBaEwCeQwMFw==}
     engines: {node: '>=4.2.0'}
     hasBin: true
+    dev: true
+
+  /ua-parser-js/1.0.2:
+    resolution: {integrity: sha512-00y/AXhx0/SsnI51fTc0rLRmafiGOM4/O+ny10Ps7f+j/b8p/ZY11ytMgznXkOVo4GQ+KwQG5UQLkLGirsACRg==}
     dev: true
 
   /uc.micro/1.0.6:

@@ -9,7 +9,7 @@ import 'element-plus/dist/index.css';
 // 进度条
 import 'nprogress/nprogress.css';
 // tailwind
-import '../assets/css/tailwind.css';
+import 'tailwindcss/tailwind.css';
 // 公共样式
 import '../assets/scss/public.scss';
 
